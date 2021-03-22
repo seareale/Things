@@ -7,10 +7,6 @@ Debian 9 Desktop(https://wiki.radxa.com/Rockpi4/downloads)
 ```bash
 wget -O -  apt.radxa.com/stretch/public.key | sudo apt-key add - 
 ```
-Edit your `/etc/apt/sources.list` and add the following:
-```bash
-deb http://apt.radxa.com/stretch/ stretch main
-```
 
 ## Rock Pi 4 setting
 ```bash
@@ -18,9 +14,15 @@ sudo apt-get update && sudo apt-get upgrade
 curl -sL https://rock.sh/get-rockpi-penta | sudo -E bash -
 sudo reboot
 ```
-
-## OMV5
+### fan
 ```bash
+sudo vi /etc/rockpi-penta.conf
+sudo systemctl restart rockpi-penta.service
+```
+
+## OMV4
+```bash
+
 sudo curl -sSL https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
 sudo reboot
 ```

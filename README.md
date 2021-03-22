@@ -3,17 +3,24 @@
 Ubuntu Server 18.04(https://wiki.radxa.com/Rockpi4/downloads)
 
 
+## Get public key
+```bash
+wget -O -  apt.radxa.com/stretch/public.key | sudo apt-key add - 
+```
+Edit your `/etc/apt/sources.list` and add the following:
+```bash
+deb http://apt.radxa.com/stretch/ stretch main
+```
+
 ## Rock Pi 4 setting
 ```bash
-wget -O - apt.radxa.com/bionic/public.key | sudo apt-key add -
 sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install curl
 curl -sL https://rock.sh/get-rockpi-penta | sudo -E bash -
 sudo reboot
 ```
 
 ## OMV5
 ```bash
-wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
+sudo curl -sSL https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
 sudo reboot
 ```

@@ -1,6 +1,6 @@
 # Penta-SATA-HAT-for-Rock-pi-4
 
-Ubuntu Server 18.04(https://wiki.radxa.com/Rockpi4/downloads)
+Debian 9 Desktop(https://wiki.radxa.com/Rockpi4/downloads)
 
 
 ## Get public key

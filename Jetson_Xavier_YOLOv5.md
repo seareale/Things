@@ -14,7 +14,7 @@ $ pip3 install numpy torch-1.8.0-cp36-cp36m-linux_aarch64.whl
 ```bash
 # torchvision 0.9.0
 $ sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
-$ git clone --branch <version> https://github.com/pytorch/vision torchvision
+$ git clone --branch v0.9.0 https://github.com/pytorch/vision torchvision
 $ cd torchvision
 $ export BUILD_VERSION=0.9.0
 $ python3 setup.py install --user

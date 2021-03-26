@@ -41,3 +41,9 @@ $ pip3 install pandas
 $ pip3 install thop
 $ pip3 install pycocotools
 ```
+
+## run YOLOv5 detect.py
+```bash
+$ python detect.py --source [IMAGE PATH] --weights [WEIGHTS PATH] --conf 0.25
+```
+ex) `$ python detect.py --source data/images --weights yolov5s.pt --conf 0.25`

@@ -50,7 +50,7 @@ ex)
 Images, Video  
 `$ python detect.py --source data/images --weights yolov5s.pt --conf 0.25`  
 `$ python detect.py --source data/sample.jpg --weights yolov5s.pt --conf 0.25`  
-`$ python detect.py --source data/sample.jpg --weights yolov5s.pt --conf 0.25`  
+`$ python detect.py --source data/sample.mp4 --weights yolov5s.pt --conf 0.25`  
 
 webCam  
 `$ python detect.py --source 0 --weights yolov5s.pt --conf 0.25`  

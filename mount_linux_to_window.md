@@ -20,3 +20,12 @@ $ net use E: /delete
 # additional
 $ rmdir D:\test  # remove link
 ```
+
+## linux to linux
+```bash
+$ sudo sshfs -o allow_other -p [PORT] [USER ID]@[IP ADDRESS]:[FULL PATH] [LOCAL FULL PATH]
+
+# unmount
+$ sudo fusermount -u [LOCAL FULL PATH]
+```
+ex) `$ sudo sshfs -o allow_other -p 80 admin@000.000.000.000:/home/admin/test /home/user/mount`
